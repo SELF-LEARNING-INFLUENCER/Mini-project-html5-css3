@@ -1,0 +1,26 @@
+body{
+    background-color: #f8f8ca;
+}
+header{
+    background-color: #a2e5ee;
+}
+section >h2{
+    background-color: #99f599;
+}
+aside >h3{
+    margin: 0px;
+}
+aside{
+    border: thin dashed red ;
+    background-color: chartreuse;
+    color: red;
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    float: right;
+
+}
+footer{
+    background-color: #cad2c5;
+    padding: 5px;
+}
