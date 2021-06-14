@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>servey form</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="container">
+    <div id="heading">
+      <h1 id="title">WELLCOME TO ROME,ITALY</h1>
+      <h3>Visit and Explore the ancient world’s most stunning surviving monuments and the city’s most impressive sights.</h3>
+    </div>
+    <div id="form-section">
+      <p id="description">Participate to Our Servey as a tourist</p>
+      <form action="" id="servey-form">
+        <label for="name" id="name-label">Your name :</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name " required />
+        <br><br>
+        <label for="email">Your Email :</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="Enter your valid email" required>
+        <br><br>
+        <label for="number" id="email-label">Your Age :</label>
+        
+        <input type="number" id="number" name="number" min="10" max="99" minlength="25" placeholder="age">
+        <br><br>
+        <p>What is your occupation?</p>
+        <select name="occupation" id="dropdown">
+          <option value="job">Job</option>
+          <option value="Business">Business</option>
+          <option value="Artist">Artist</option>
+          <option value="Student">Student</option>
+          <option value="Other">Others</option>
+        </select>
+        <br><br>
+        <p>You are a...</p>
+        <input type="radio" name="Male" id="gender">
+        <label for="gender">Male</label>
+        <input type="radio" name="female" id="gender">
+        <label for="gender">Female</label>
+        <input type="radio" name="other" id="gender">
+        <label for="other">Others</label>
+        <br><br>
+        <p>Which Roman Monuments have You already visited?(Check,If you visited)</p>
+        <br>
+        <input type="checkbox" name="monument" id="monument" value="Colosseum">
+        <label for="monument">Colosseum</label>
+        <input type="checkbox" name="monument" id="monument" value="Venice Square">
+        <label for="monument">Venice square</label>
+        <input type="checkbox" name="monument" id="monument" value="Trevi Fountain">
+        <label for="monuent">Trevi Fountain</label>
+        <br>
+        <input type="checkbox" name="monument" id="monument" value="Vatican City">
+        <label for="monument">Vatican City</label>
+        <input type="checkbox" name="monument" id="monument" value="Spanish Step">
+        <label for="monument">Spanish Steps</label>
+        <input type="checkbox" name="monument" id="monument" value="Pantheon">
+        <label for="monument">Pantheon</label>
+        <br><br>
+        <p>Your Bio :</p>
+        <textarea name="bio" id="bio" cols="50" rows="5"></textarea>
+        <br><br>
+        <submit value="Join to Servey">Join to Servey</submit>
+  
+      </form>
+  
+    </div>
+  </div>
+</body>
+</html>
