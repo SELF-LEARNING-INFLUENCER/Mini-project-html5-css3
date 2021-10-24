@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FCC-4-technical documentation</title>
+</head>
+<body>
+  <div id="container">
+    <div class="banner">
+      <hgroup class="heading-type1">
+        <h2>CASCADING STYLE SHEET</h2>
+        <h3>CASCADING STYLE SHEET</h3>
+        <h4>CASCADING STYLE SHEET</h4>
+        <h5>CASCADING STYLE SHEET</h5>
+      </hgroup>
+      <div class="logo">
+        <img src="https://www.tc-web.it/wp-content/uploads/2019/01/css.jpg" alt="">
+        <img src="https://soydigital.com/wp-content/uploads/2020/05/CSS3.jpg" alt="">
+        <img src="https://www.pngkit.com/png/detail/222-2229874_95kib-400x400-css-logo-css-png.png" alt="">
+      </div>
+      <hgroup class="heading-type2">
+        <h5>CASCADING STYLE SHEET</h5>
+        <h4>CASCADING STYLE SHEET</h4>
+        <h3>CASCADING STYLE SHEET</h3>
+        <h2>CASCADING STYLE SHEET</h2>
+      </hgroup>
+  
+    </div>
+    <nav id="navbar">
+      <header>All Features</header>
+      <ul>
+        <li><a class="nav-link" href="#What_is_CSS">What is CSS</a></li>
+        <li><a class="nav-link" href="#More_about_CSS">More about CSS</a></li>
+        <li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+        <li><a class="nav-link" href="#CSS_Selectors">CSS Selectors</a></li>
+        <li><a class="nav-link" href="#CSS_Comments">CSS Comments</a></li>
+        <li><a class="nav-link" href="#CSS_Color">CSS Color</a></li>
+        <li><a class="nav-link" href="#CSS_Background">CSS Background</a></li>
+        <li><a class="nav-link" href="#CSS_Fonts">CSS Fonts</a></li>
+        <li><a class="nav-link" href="#CSS_Links">CSS Links</a></li>
+        <li><a class="nav-link" href="#CSS_Margin">CSS Margin</a></li>
+        <li><a class="nav-link" href="#CSS_Padding">CSS Padding</a></li>
+        <li><a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Full Version</a></li>
+  
+      </ul>
+    </nav>
+  </div>
+  <main id="main-doc">
+    <header class="main-header">CASCADING STYLE SHEET</header>
+    <section class="main-section" id="What_is_CSS">
+      <header>What is CSS</header>
+      <artcle>
+        <p>CSS stands for Cascading Style Sheets. CSS is a standard style sheet language used for describing the presentation (i.e. the layout and formatting) of the web pages.</p>
+        <p>Prior to CSS, nearly all of the presentational attributes of HTML documents were contained within the HTML markup (specifically inside the HTML tags); all the font colors, background styles, element alignments, borders and sizes had to be explicitly described within the HTML.</p>
+        <p>As a result, development of the large websites became a long and expensive process, since the style information were repeatedly added to every single page of the website.</p>
+        <p>To solve this problem CSS was introduced in 1996 by the World Wide Web Consortium (W3C), which also maintains its standard. CSS was designed to enable the separation of presentation and content. Now web designers can move the formatting information of the web pages to a separate style sheet which results in considerably simpler HTML markup, and better maintainability.</p>
+      </artcle>
+    </section>
+    <section class="main-section" id="More_about_CSS">
+      <header>More about CSS</header>
+      <article>
+        <h3>What You Can Do with CSS</h3>
+        <p>There are lot more things you can do with CSS.</p>
+        <ul>
+          <li>You can easily apply same style rules on multiple elements.</li>
+          <li>You can control the presentation of multiple pages of a website with a single style sheet.</li>
+          <li>You can present the same page differently on different devices.</li>
+          <li>You can style dynamic states of elements such as hover, focus, etc. that isn't possible otherwise.</li>
+          <li>You can change the position of an element on a web page without changing the markup.</li>
+          <li>You can alter the display of existing HTML elements.</li>
+          <li>You can transform elements like scale, rotate, skew, etc. in 2D or 3D space</li>
+          <li>You can create animations and transitions effects without using any JavaScript.</li>
+          <li>You can create print friendly version of your web pages.</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Advantages of Using CSS</h3>
+        <p>The biggest advantage of CSS is that it allows the separation of style and layout from the content of the document. Here are some more advantages, why one should start using CSS?</p>
+        <ul>
+          <li><strong>CSS Save Lots of Time — </strong>CSS gives lots of flexibility to set the style properties of an element. You can write CSS once; and then the same code can be applied to the groups of HTML elements, and can also be reused in multiple HTML pages.</li>
+          <li><strong>Easy Maintenance — </strong>CSS provides an easy means to update the formatting of the documents, and to maintain the consistency across multiple documents. Because the content of the entire set of web pages can be easily controlled using one or more style sheets.</li>
+          <li><strong>Pages Load Faster —</strong>CSS enables multiple pages to share the formatting information, which reduces complexity and repetition in the structural contents of the documents. It significantly reduces the file transfer size, which results in a faster page loading.</li>
+          <li><strong>Superior Styles to HTML —</strong>CSS has much wider presentation capabilities than HTML and provide much better control over the layout of your web pages. So you can give far better look to your web pages in comparison to the HTML presentational elements and attributes.</li>
+          <li><strong>Multiple Device Compatibility —</strong>CSS also allows web pages to be optimized for more than one type of device or media. Using CSS the same HTML document can be presented in different viewing styles for different rendering devices such as desktop, cell phones, etc.</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Syntax">
+      <header>CSS Syntax</header>
+      <artcle>
+        <p CSS stylesheet consists of a set of rules that are interpreted by the web browser and then applied to the corresponding elements such as paragraphs, headings, etc. in the document.</p>
+  
+        <p> CSS rule have two main parts, a selector and one or more declarations:</p>
+        <code>
+          h1 {color:blue; text-align:center;}
+        </code>
+        <p>To make the CSS more readable, you can put one declaration on each line, like this:</p>
+        <code>
+          h1{color: blue; <br>
+          &nbsp;&nbsp;&nbsp;text-align: center;}
+        </code>
+        <p>In the example above h1 is a selector, color and text-align are the CSS properties, and the given blue and center are the corresponding values of these properties.</p>
+      </artcle>
+    </section>
+    <section class="main-section" id="CSS_Selectors">
+      <header>CSS Selectors</header>
+      <artcle>
+        <p>A CSS selector is a pattern to match the elements on a web page. The style rules associated with that selector will be applied to the elements that match the selector pattern.</p>
+        <p>Selectors are one of the most important aspects of CSS as they allow you to target specific elements on your web page in various ways so that they can be styled</p>
+        <p>Several types of selectors are available in CSS, let's take a closer look at them:</p>
+        <ol>
+          <li>Universal Selector</li>
+          <li>Element Type Selectors</li>
+          <li>Id Selectors</li>
+          <li>Class Selectors</li>
+          <li>Descendant Selectors</li>
+          <li>Child Selectors</li>
+          <li>Adjacent Sibling Selectors</li>
+          <li>General Sibling Selectors</li>
+          <li>Grouping Selectors</li>
+        </ol>
+      </artcle>
+    </section>
+    <section class="main-section" id="CSS_Comments">
+      <header>CSS Comments</header>
+      <artcle>
+        <p>Comments are usually added with the purpose of making the source code easier to understand. It may help other developer (or you in the future when you edit the source code) to understand what you were trying to do with the CSS. Comments are significant to programmers but ignored by browsers.</p>
+        <p>A CSS comment begins with /*, and ends with */, as shown in the example below:</p>
+        <code>
+          /* This is a CSS comment */ <br>
+          h1 {
+          color: blue;
+          text-align: center;
+          } <br>
+          /* This is a multi-line CSS comment <br>
+          that spans across more than one line */ <br>
+          p {
+          font-size: 18px;
+          text-transform: uppercase;
+          }
+        </code>
+      </artcle>
+    </section>
+    <section class="main-section" id="CSS_Color">
+      <header>CSS Color</header>
+      <artcle>
+        <p>The color property defines the text color (foreground color in general) of an element.</p>
+        <p>For instance, the color property specified in the body selector defines the default text color for the whole page. Let's try out the following example to see how it works:</p>
+        <code>
+          body {
+          color: #ff5722;
+          }
+        </code>
+        <p><strong>Note:</strong>The color property normally inherits the color value from their parent element, except the case of anchor elements. For example, if you specify color for the body element it will automatically be passed down to the headings, paragraphs, etc.</p>
+      </artcle>
+      <article>
+        <h3>Defining Color Values</h3>
+        <p>Colors in CSS most often specified in the following formats:</p>
+        <ul>
+          <li>A color keyword - like "red", "green", "blue", "transparent", etc.</li>
+          <li>A value - like "#ff0000", "#00ff00", etc.</li>
+          <li>An HEX value - like "#ff0000", "#00ff00", etc.</li>
+        </ul>
+      </article>
+    </section>
+    <section class="main-section" id="CSS_Background">
+      <header>CSS Background</header>
+      <artcle>
+        <p>Background plays an important role in the visual presentation of a web page.</p>
+        <p>CSS provide several properties for styling the background of an element, including coloring the background, placing images in the background and managing their positioning, etc</p>
+        <p>The background properties are background-color, background-image, background-repeat, background-attachment and background-position.</p>
+      </artcle>
+    </section>
+    <section class="main-section" id="CSS_Fonts">
+      <header>CSS Fonts</header>
+      <artcle>
+        <p>Choosing the right font and style is very crucial for the readability of text on a page.</p>
+        <p>CSS provide several properties for styling the font of the text, including changing their face, controlling their size and boldness, managing variant, and so on.</p>
+        <p>The font properties are: font-family, font-style, font-weight, font-size, and font-variant.</p>
+      </artcle>
+    </section>
+    <section class="main-section" id="CSS_Links">
+      <header>CSS Links</header>
+      <artcle>
+        <p>Links or hyperlinks are an essential part of a website. It allows visitors to navigate through the site. Therefore styling the links properly is an important aspect of building a user-friendly website.</p>
+        <p>A link has four different states — link, visited, active and hover. These four states of a link can be styled differently through using the following anchor pseudo-class selectors.</p>
+        <ul>
+          <li><strong>a:link —</strong>define styles for normal or unvisited links.</li>
+          <li><strong>a:visited —</strong>define styles for links that the user has already visited.</li>
+          <li><strong>a:hover — </strong>define styles for a link when the user place the mouse pointer over it.</li>
+          <li><strong>a:active —</strong>define styles for links when they are being clicked.</li>
+        </ul>
+        <p>You can specify any CSS property you'd like e.g. color, font, background, border, etc. to each of these selectors to customize the style of links, just like you do with the normal text.</p>
+        <code>
+  
+          /* unvisited link */ <br>
+          a:link {
+          color: #ff0000;
+          text-decoration: none;
+          border-bottom: 1px solid;
+          } <br>
+          /* visited link */ <br>
+          a:visited {
+          color: #ff00ff;
+          } <br>
+          /* mouse over link */ <br>
+          a:hover {
+          color: #00ff00;
+          border-bottom: none;
+          } <br>
+          /* active link */ <br>
+          a:active {
+          color: #00ffff;
+          }
+        </code>
+      </artcle>
+    </section>
+    <section class="main-section" id="CSS_Margin">
+      <header>CSS Margin</header>
+      <artcle>
+        <p>The CSS margin properties allow you to set the spacing around the border of an element's box (or the edge of the element's box, if it has no defined border).</p>
+        <p>An element's margin is not affected by its background-color, it is always transparent. However, if the parent element has the background color it will be visible through its margin area.</p>
+        <p>You can specify the margins for the individual sides of an element such as top, right, bottom, and left sides using the CSS margin-top, margin-right, margin-bottom, and the margin-left properties, respectively. Let's try out the following example to understand how it works:</p>
+        <code>
+          h1 {
+          margin-top: 50px;
+          margin-bottom: 100px;
+          } <br>
+          p {
+          margin-left: 75px;
+          margin-right: 75px;
+          }
+        </code>
+      </artcle>
+    </section>
+    <section class="main-section" id="CSS_Padding">
+      <header>CSS Padding</header>
+      <artcle>
+        <p>The CSS padding properties allow you to set the spacing between the content of an element and its border (or the edge of the element's box, if it has no defined border).</p>
+        <p>The padding is affected by the element's background-color. For instance, if you set the background color for an element it will be visible through the padding area.</p>
+        <p>You can specify the paddings for the individual sides of an element such as top, right, bottom, and left sides using the CSS padding-top, padding-right, padding-bottom, and the padding-left properties, respectively. Let's try out an example to understand how it works:</p>
+        <p>You can specify the paddings for the individual sides of an element such as top, right, bottom, and left sides using the CSS padding-top, padding-right, padding-bottom, and the padding-left properties, respectively. Let's try out an example to understand how it works:</p>
+        <code>
+          h1 {
+          padding-top: 50px;
+          padding-bottom: 100px;
+          } <br>
+          p {
+          padding-left: 75px;
+          padding-right: 75px;
+          }
+        </code>
+  
+      </artcle>
+    </section>
+    <hr>
+    <section class="main-section" id="CSS_Padding">
+      <header>For Full Version : <span><a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Click Here</a></span> </header>
+    </section>
+  </main>
+  
+  </div>
+</body>
+</html>
