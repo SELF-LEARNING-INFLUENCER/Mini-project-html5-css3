@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>downlodable link for pdf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            font-family: 'Spline Sans', sans-serif;
+            background-color: midnightblue;
+            color: cornsilk;
+            padding: 35px;
+            text-align: center;
+        }
+        .container span{
+            display:inline-block;
+            margin: 0 20px;
+            padding: 25px;
+            background-color: slateblue;
+            border-radius: 8px;
+        }
+        .container p{
+            text-align: justify;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 25px;
+        }
+        .container h1{
+            margin-top: 20px ;
+            background-color: #fff;
+            padding: 20px 0;
+            border-radius: 8px;
+            color: navy;
+        }
+        .container h1 button{
+            background-color: rgb(7, 128, 128);
+            padding: 15px;
+            color: #fff;
+            outline: none;
+            font-size: large;
+            font-weight: bolder;
+            border-radius: 10px;
+            border: none;
+        }
+        .container h1 button:hover{
+           cursor: pointer; 
+           text-decoration: underline;
+           background-color: aquamarine;
+           color: #222;
+           box-shadow: 0 10px 10px #666;
+           transition: 0.3s;
+        }
+        @media screen and (min-width: 600px){
+            *{
+                font-size: larger;
+            }
+        }
+        @media screen and (max-width: 580px){
+            *{
+                font-size: initial;
+        }
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span><h2>Nome : FARUK ALAM</h2><hr><h2>Cognome : HAWLADER</h2></span>
+        <p>
+            Mi chiamo Faruk Alam,Sono una persona motivata ad apprendere, a cui
+            piace dedicarsi nel lavoro che gli viene assegnato. Sono disponibile a
+            lavorare come operaio generico,Facchino/Bel boy,Cameriere ai
+            Piani,Addetto alle pulizie,Cameriere al sala,Scaffalista,Magazziniere e
+            Volantinaggio.
+        </p>
+        <hr>
+        <h1>Per scaricare CV clicca- <button onclick="location.href='files/cv_mod22.pdf';">SCARICA CV</button></h1> 
+    </div>
+</body>
+</html>
